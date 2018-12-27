@@ -1,0 +1,27 @@
+{
+  "name": "koa-demo",
+  "version": "1.0.0",
+  "description": "koa demo",
+  "main": "demo01.js",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "koa": "^2.6.2",
+    "koa-body": "^4.0.6",
+    "koa-route": "^3.2.0",
+    "koa-static": "^5.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PangYiMing"
+  },
+  "keywords": [
+    "koa",
+    "demo"
+  ],
+  "author": "Lyndon",
+  "license": "MIT"
+}
