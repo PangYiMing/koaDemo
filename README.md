@@ -2,3 +2,41 @@
 学习用的demo
 
 参考：http://www.ruanyifeng.com/blog/2017/08/koa.html
+
+也会加入一些用到的，小的，测试用例
+
+[304](./demo01.js)
+
+[根据Headers Accept返回内容](./demo02.js)
+
+[返回给用户的网页往往都写成模板文件](./demo03.js)
+
+[根据path分配内容](./demo04.js)
+
+[koa-route使用](./demo05.js)
+
+[静态目录](./demo06.js)
+
+
+[中间件 next用法](./demo07.js)
+
+
+[合并中间件](./demo08.js)
+
+
+[静态目录](./demo09.js)
+
+
+[抛出错误给前端](./demo10.js)
+
+
+[抛出错误，handler函数捕获](./demo11.js)
+
+
+[cookies 读写cookie](./demo12.js)
+
+
+[读取https中的键值对](./demo13.js)
+
+[文件上传](./demo14.js)
+
