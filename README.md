@@ -40,3 +40,12 @@
 
 [文件上传](./demo14.js)
 
+[redis 基础 存储读取](./demo15.js)
+    启动 redis : redis-server 
+
+[redis 基础 列表](./demo16.js)
+
+    
+[redis 基础 集合](./demo17.js)
+    
+[redis 基础 消息中介](./demo18.js)
