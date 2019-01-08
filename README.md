@@ -47,5 +47,8 @@
 
     
 [redis 基础 集合](./demo17.js)
+
     
-[redis 基础 消息中介](./demo18.js)
+[redis 基础 消息中介 接受 暂未实现](./demo19.js)
+
+[redis 基础 消息中介 发送](./demo18.js)
