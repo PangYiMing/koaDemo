@@ -4,9 +4,11 @@
   "description": "koa demo",
   "main": "demo01.js",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "fs": "0.0.1-security",
     "koa": "^2.6.2",
     "koa-body": "^4.0.6",
+    "koa-bodyparser": "^4.2.1",
     "koa-route": "^3.2.0",
     "koa-static": "^5.0.0",
     "mongoose": "^5.4.1",

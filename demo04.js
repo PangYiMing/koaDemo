@@ -5,6 +5,7 @@ const Koa = require('koa');
 const app = new Koa();
 
 const main = ctx => {
+  console.log('ctx.request.path',ctx.request.path)
   if (ctx.request.path === '/') {
     ctx.response.type = 'html';
     ctx.response.body = '<a href="/a">Go Other Page</a>';

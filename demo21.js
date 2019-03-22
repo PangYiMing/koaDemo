@@ -8,7 +8,12 @@ const test = require('./demo21/proxy')
 
 
 app.use(async ctx => {
-    await test()
+  await test()
 });
-
+// var rp = require('request-promise');
+// const koaBody = require('koa-body');
+// app.use(koaBody());
+// app.use(ctx => {
+//   ctx.body = `Request Body: ${JSON.stringify(ctx.request.body)}`;
+// });
 app.listen(3000);
