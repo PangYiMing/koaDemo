@@ -10,10 +10,10 @@ const app = new Koa();
 const main = ctx => {
   ctx.response.type = "html";
   const { host } = ctx;
-  console.log("host", host, "ctx:", ctx);
-  console.log(
-    `${Date.now()}${ctx.path} :_____ ${ctx.request.method} ${ctx.request.url}`
-  );
+  console.log("host", host, "ctx:", ctx.path);
+  // console.log(
+  //   `${Date.now()}${ctx.path} :_____ ${ctx.request.method} ${ctx.request.url}`
+  // );
   ctx.response.body = '<a href="/other">Index Page</a>';
 };
 const other = ctx => {

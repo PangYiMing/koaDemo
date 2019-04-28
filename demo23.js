@@ -43,7 +43,7 @@ function rw(path, num) {
     //     }
     //   }
     // }
-    fs.writeFile(path, newStr, function (err) {
+    fs.writeFile(path, '', function (err) {
       if (err) {
         throw err;
       }

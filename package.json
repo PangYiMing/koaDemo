@@ -5,6 +5,7 @@
   "main": "demo01.js",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "child_process": "^1.0.2",
     "fs": "0.0.1-security",
     "koa": "^2.6.2",
     "koa-body": "^4.0.6",
