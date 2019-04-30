@@ -4,11 +4,61 @@
 var process = require('child_process');
 var fs = require('fs');
 
-
+// 选择测试环境
 let env = 't3'
+// 选择工程的名字
 // let filter = 'fe'
-let filter = 'learnta_fe'
+let filter = 'teaching_admin_fe'
 let products = [
+  // fe ---start----
+  // "teacher",
+  // "student",
+  // "task",
+  // "businessAdmin",
+  // fe ---end----
+
+
+  // fe_admin ---start----
+  // "",
+  // fe_admin ---end----
+
+
+  // fe_content_admin ---start----
+  // "",
+  // fe_content_admin ---end----
+
+  // fe_dashboard ---start---- 未配置
+  // "",
+  // fe_dashboard ---end----
+
+
+  // fe_front ---start---- 
+  // "",
+  // fe_front ---end----
+
+  // learnta_fe ---start---- 有些没有t3
+  // "activity",
+  // "business",
+  // "ccnu",
+  // "ccnuAdmin",
+  // "crmAdmin",
+  // "member",
+  // "entryAdmin",
+  // "officialAdmin",  // t1没有
+  // "officialSite",
+  // "officialSiteSh",  //t3没有
+  // "operationAdmin",
+  // "partner", // 废弃
+  // "miniapp", // 废弃
+  // "customerSuccess", //t3没有
+  // "training",  //t3没有
+  // learnta_fe ---end----
+
+  // teaching_admin_fe ---start----
+  "material",   //t3没有
+  // teaching_admin_fe ---end----
+
+
   // "crmAdmin",
   // "ccnuAdmin",
   // "miniapp",
@@ -21,25 +71,18 @@ let products = [
   // "appage",
   // "promotion",
   // "go",
-  // "task",
   // "admin",
   // "single",
-  // "teacher4",
-  // "teacher3",
-  // "teacher",
-  // "student4",
-  // "student",
-  // "student3",
+
   // "business",
   // "single",
   // "official",
   // "activity",
-  "member",
+  // "member",
   // "bd",
   // "dashboard",
   // "crm",
   // "ccnu",
-  // "material",
   // "customersuccess",
   // "training",
   // ""
