@@ -8,3 +8,4 @@ module.exports = {
   "beta": "[]",
   "pro": "[]"
 }
+var aaa = 'aas'
