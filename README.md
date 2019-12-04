@@ -56,3 +56,5 @@
 [文件修改](./demo23.js)
 
 [从go拿到配置创建域名配置文件，如果有就引用,require](./demo24.js)
+
+[替换script，link外部引用为成内容](./demo25.js)
