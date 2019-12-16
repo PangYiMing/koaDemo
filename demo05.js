@@ -9,8 +9,8 @@ const app = new Koa();
 
 const main = ctx => {
   ctx.response.type = "html";
-  const { host } = ctx;
-  console.log("host", host, "ctx:", ctx.path);
+  const { host, request:{url} } = ctx;
+  console.log("host", host, "ctx:", url);
   // console.log(
   //   `${Date.now()}${ctx.path} :_____ ${ctx.request.method} ${ctx.request.url}`
   // );
