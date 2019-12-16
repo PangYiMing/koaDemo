@@ -1,11 +1,21 @@
 const { Client } = require('pg');
 const formatDate = require('./formatDate');
 
-const client = new Client({
+const config = {
+  database: 'dashboard',
+  password: 'aabbcc',
   user: 'postgres',
+  tableName: 'demo1',
+  yColumnName: 'value',
+  xTimeFormat: 'yyyy-mm'
+};
+
+const client = new Client({
+  user: config.user,
   //   host: 'localhost',
-  database: 'postgres',
-  password: 'P23Qas..',
+  database: config.database,
+  password: config.password,
+  // password: 'P23Qas..',
   port: 5432
 });
 
@@ -19,13 +29,14 @@ client.connect();
 const main = async ctx => {
   ctx.response.type = 'html';
 
-  let res = await client.query('SELECT * FROM test.mytable order by date');
-  // console.log(err, res);
+  let res = await client.query(
+    `SELECT * FROM ${config.tableName} order by date`
+  );
   for (let index = 0; index < res.rows.length; index++) {
     const element = res.rows[index];
     element.serie = 'London';
-    element.x = '20' + formatDate(new Date(element.date), 'mm-dd');
-    element.y = parseInt(element.val);
+    element.x = formatDate(new Date(element.date), config.xTimeFormat);
+    element.y = parseInt(element[config.yColumnName]);
   }
   let data = JSON.stringify(res.rows);
   console.log(res.rows);
